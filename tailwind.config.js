@@ -17,8 +17,14 @@ module.exports = {
       },
     },
     extend: {
+      boxShadow: {
+        md: "0px 0px 20px 0px rgba(76, 87, 125, 0.02)",
+        lg: "0px 10px 30px 0px rgba(82, 63, 105, 0.05)",
+        smooth: "0 0 50px 0 rgb(82 63 105 / 15%)",
+      },
       colors: {
-        gray: colors.zinc,
+        gray: colors.slate,
+        primary: colors.sky,
       },
       fontFamily: {
         sans: ["Poppins", "sans-serif"],

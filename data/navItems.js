@@ -8,7 +8,7 @@ import {
   UserCirclePlus,
 } from "phosphor-react";
 
-// const iconClasses = " text-teal-600";
+// const iconClasses = " text-primary-600";
 
 const navItems = [
   {

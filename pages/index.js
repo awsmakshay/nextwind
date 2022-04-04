@@ -6,7 +6,7 @@ import dashboardItems from "../data/dashboardItems";
 
 const Card = ({ children }) => {
   return (
-    <div className="bg-white rounded-md  shadow-md hover:-translate-y-1 hover:shadow-xl transition  py-4 px-6 h-full cursor-pointer">
+    <div className="rounded-md shadow-lg bg-white py-4 px-6 h-80 ">
       {children}
     </div>
   );
@@ -21,37 +21,23 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <Container>
-          <div className="text-2xl text-gray-800 font-bold">Hi, Joshua 👋</div>
-          <div className="text-sm capitalize text-gray-600">
-            welcome to your dashboard
-          </div>
-
-          <div className="grid py-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
-            {dashboardItems.map((item) => (
-              <div key={item.name}>
-                <Card>
-                  <div className="flex  items-center justify-between">
-                    <div className="capitalize flex-1 pr-4">
-                      <div className="flex-col items-center justify-center   ">
-                        <div className="text-teal-600 font-bold text-lg">
-                          {item.name}
-                        </div>
+        <div className="grid py-12 grid-cols-1 md:grid-cols-2  gap-5">
+          {dashboardItems.map((item) => (
+            <div key={item.name}>
+              <Card>
+                <div className="flex  items-center justify-between">
+                  <div className="capitalize flex-1 pr-4">
+                    <div className="flex-col items-center justify-center   ">
+                      <div className="text-gray-600 font-medium ">
+                        {item.name}
                       </div>
                     </div>
-                    <div>
-                      <IconContext.Provider
-                        value={{ size: 64, weight: "duotone" }}
-                      >
-                        {item.icon}
-                      </IconContext.Provider>
-                    </div>
                   </div>
-                </Card>
-              </div>
-            ))}
-          </div>
-        </Container>
+                </div>
+              </Card>
+            </div>
+          ))}
+        </div>
       </Layout>
     </div>
   );
