@@ -1,7 +1,7 @@
 import { Disclosure, Transition } from "@headlessui/react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { CaretDown, CaretRight } from "phosphor-react";
+import { CaretRight } from "phosphor-react";
 
 const NavItem = ({ item }) => {
   const router = useRouter();
@@ -26,7 +26,9 @@ const NavItem = ({ item }) => {
                     {item.name}
                   </div>
                   <CaretRight
-                    className={`${open ? "transform rotate-90" : ""} w-5 h-5 `}
+                    className={`${
+                      open ? "transform rotate-90" : ""
+                    } w-5 h-5 transition `}
                   />
                 </div>
               </Disclosure.Button>

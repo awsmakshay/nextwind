@@ -1,4 +1,5 @@
 import { Popover, Transition } from "@headlessui/react";
+import Link from "next/link";
 import { User } from "phosphor-react";
 import { Fragment } from "react";
 
@@ -36,7 +37,11 @@ export default function Profile() {
                 </div>
                 <div className="p-4 flex flex-col ">
                   <Button>My profile</Button>
-                  <Button>Settings</Button>
+                  <Link href="/admin">
+                    <a>
+                      <Button>Settings</Button>
+                    </a>
+                  </Link>
                   <Button>Sign out</Button>
                 </div>
               </div>

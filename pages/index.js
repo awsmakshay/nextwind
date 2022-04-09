@@ -1,6 +1,4 @@
 import Head from "next/head";
-import { IconContext } from "phosphor-react";
-import Container from "../components/Container";
 import Layout from "../components/Layout";
 import dashboardItems from "../data/dashboardItems";
 

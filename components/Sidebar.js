@@ -1,9 +1,9 @@
-import { useState } from "react";
-import { Close, Hamburger, SquaresFour } from "./Icons";
-import { IconContext, UserCircle } from "phosphor-react";
-import navItems from "../data/navItems";
-import NavItem from "./NavItem";
 import Link from "next/link";
+import { IconContext } from "phosphor-react";
+import { useState } from "react";
+import navItems from "../data/navItems";
+import { Close, Hamburger, SquaresFour } from "./Icons";
+import NavItem from "./NavItem";
 
 // TODO: Replace a tag with next link
 const Sidebar = () => {
@@ -17,14 +17,14 @@ const Sidebar = () => {
   return (
     <>
       {/* mobile menu bar */}
-      <div className="bg-gray-200 flex justify-between md:hidden">
+      <div className="bg-gray-200 flex justify-between md:hidden ">
         {/* logo */}
         <Link href="/">
           <a className="block p-4 font-bold">App Logo</a>
         </Link>
         {/* mobile menu button */}
         <button
-          className="  p-4 focus:outline-none focus:bg-gray-300"
+          className=" rounded-lg p-2 m-2 focus:outline-none focus:bg-gray-300"
           onClick={handleOpen}
         >
           <>
@@ -40,7 +40,7 @@ const Sidebar = () => {
       <div
         className={`${
           !isOpen && "-translate-x-full"
-        }  bg-gray-100 z-50 flex flex-col justify-between text-gray-500  w-64 space-y-6  h-screen  absolute inset-y-0 left-0 transform md:relative md:translate-x-0 transition duration-200 ease-in-out`}
+        }  bg-gray-100 z-50 flex flex-col justify-between text-gray-500  w-64 space-y-6  min-h-screen  absolute inset-y-0 left-0 transform md:relative md:translate-x-0 transition duration-200 ease-in-out`}
       >
         <div>
           {/* logo */}
@@ -61,12 +61,6 @@ const Sidebar = () => {
             </IconContext.Provider>
           </nav>
         </div>
-
-        <Link href="/">
-          <a className="flex items-center justify-center w-full h-16 mt-auto">
-            <span className="ml-2 text-sm font-medium">Fixed bottom</span>
-          </a>
-        </Link>
       </div>
     </>
   );
