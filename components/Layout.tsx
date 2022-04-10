@@ -7,9 +7,9 @@ type LayoutProps = {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className="relative min-h-screen md:flex ">
+    <div className="dark relative min-h-screen md:flex">
       <Sidebar />
-      <div className="flex-1 md:h-screen md:overflow-y-scroll ">
+      <div className="flex-1 bg-gray-100 dark:bg-gray-900 md:h-screen md:overflow-y-scroll">
         <Header />
         <Container>{children}</Container>
       </div>

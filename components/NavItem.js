@@ -38,7 +38,7 @@ const NavItem = ({ item }) => {
                 leaveFrom="transform scale-100 opacity-100"
                 leaveTo="transform scale-95 opacity-0"
               >
-                <Disclosure.Panel className="my-1 ml-3 space-y-2 border-l">
+                <Disclosure.Panel className="my-1 ml-3 space-y-2 border-l dark:border-gray-600">
                   {/* Recursively using navitem here */}
                   {item.submenu.map((item) => (
                     <NavItem key={item.name} item={item} />

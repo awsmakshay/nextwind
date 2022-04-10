@@ -3,9 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-gray-100;
-}
 /* Custom scrollbar  */
 /* width */
 ::-webkit-scrollbar {
@@ -15,15 +12,15 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  @apply bg-gray-200;
+  @apply bg-gray-200 dark:bg-gray-600;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  @apply bg-gray-300;
+  @apply bg-gray-300 dark:bg-gray-800;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-gray-400;
+  @apply bg-gray-400 dark:bg-gray-700;
 }
