@@ -55,8 +55,7 @@ const NavItem = ({ item }) => {
         <Link href={item.route} passHref>
           <div
             className={`${
-              router.pathname == item.route &&
-              "bg-white text-primary-500 hover:text-white"
+              router.pathname == item.route && "bg-white text-primary-500 "
             }  py-2.5 px-4 rounded-lg font-medium transition duration-200 text-sm cursor-pointer  hover:text-primary-600 flex items-center justify-between`}
           >
             <div className="flex items-center capitalize">
