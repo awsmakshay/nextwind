@@ -9,8 +9,8 @@ export default function Profile() {
     <Popover className="relative">
       {({ open }) => (
         <>
-          <Popover.Button className={`border-2  rounded-lg p-2`}>
-            <User weight="duotone" className="w-6 h-6 text-primary-500" />
+          <Popover.Button className={`rounded-lg  border-2 p-2`}>
+            <User weight="duotone" className="h-6 w-6 text-primary-500" />
           </Popover.Button>
           <Transition
             as={Fragment}
@@ -21,14 +21,14 @@ export default function Profile() {
             leaveFrom="opacity-100 translate-y-0"
             leaveTo="opacity-0 translate-y-1"
           >
-            <Popover.Panel className="absolute z-10 px-4 mt-2 transform sm:px-0 right-0">
-              <div className="w-max rounded-lg shadow-smooth bg-white border ">
-                <div className="flex space-x-3 p-4 border-b border-gray-200">
+            <Popover.Panel className="absolute right-0 z-10 mt-2 transform px-4 sm:px-0">
+              <div className="w-max rounded-lg border bg-white shadow-smooth ">
+                <div className="flex space-x-3 border-b border-gray-200 p-4">
                   <div>
-                    <div className="border-2 rounded-lg p-2 ">
+                    <div className="rounded-lg border-2 p-2 ">
                       <User
                         weight="duotone"
-                        className="w-6 h-6 text-primary-500"
+                        className="h-6 w-6 text-primary-500"
                       />
                     </div>
                   </div>
@@ -39,7 +39,7 @@ export default function Profile() {
                     </div>
                   </div>
                 </div>
-                <div className="p-4 flex flex-col ">
+                <div className="flex flex-col p-4 ">
                   <Button>
                     <UserCircle weight="duotone" className={iconClasses} />
                     My Profile
@@ -70,7 +70,7 @@ export default function Profile() {
 
 function Button({ children }) {
   return (
-    <div className="p-2 hover:bg-gray-100 flex items-center  text-gray-600 transition cursor-pointer rounded-lg text-sm hover:text-primary-500 font-medium">
+    <div className="flex cursor-pointer items-center rounded-lg  p-2 text-sm font-medium text-gray-600 transition hover:bg-gray-100 hover:text-primary-500">
       {children}
     </div>
   );

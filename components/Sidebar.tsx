@@ -18,14 +18,14 @@ const Sidebar = () => {
   return (
     <>
       {/* mobile menu bar */}
-      <div className="bg-gray-200 flex justify-between md:hidden ">
+      <div className="flex justify-between bg-gray-200 md:hidden ">
         {/* logo */}
         <Link href="/">
           <a className="block p-4 font-bold">App Logo</a>
         </Link>
         {/* mobile menu button */}
         <button
-          className=" rounded-lg p-2 m-2 focus:outline-none focus:bg-gray-300"
+          className=" m-2 rounded-lg p-2 focus:bg-gray-300 focus:outline-none"
           onClick={handleOpen}
         >
           <>
@@ -41,14 +41,14 @@ const Sidebar = () => {
       <div
         className={`${
           !isOpen && "-translate-x-full"
-        }  bg-white  border-r  z-50 flex flex-col justify-between text-gray-500  w-64 space-y-6 px-2  min-h-screen  absolute inset-y-0 left-0 transform md:relative md:translate-x-0 transition duration-200 ease-in-out`}
+        }  absolute  inset-y-0  left-0 z-50 flex min-h-screen w-64  transform flex-col justify-between  space-y-6  border-r bg-white px-2 text-gray-500 transition duration-200 ease-in-out md:relative md:translate-x-0`}
       >
         <div className="px-2">
           {/* logo */}
           <Link href="/" passHref>
-            <div className="flex items-center space-x-2 px-4 h-16 cursor-pointer ">
-              <span className="text-2xl font-bold  flex items-center">
-                <SquaresFour className="h-8 w-8 mr-2 text-red-400" />
+            <div className="flex h-16 cursor-pointer items-center space-x-2 px-4 ">
+              <span className="flex items-center  text-2xl font-bold">
+                <SquaresFour className="mr-2 h-8 w-8 text-red-400" />
                 App Logo
               </span>
             </div>

@@ -16,7 +16,7 @@ const NavItem = ({ item }) => {
                 <div
                   className={`${
                     router.pathname == item.route && "text-primary-500 "
-                  } hover:text-primary-500  py-1 px-4 rounded-lg  transition duration-200 text-sm font-medium  flex items-center justify-between `}
+                  } flex  items-center justify-between rounded-lg  py-1 px-4 text-sm font-medium  transition duration-200 hover:text-primary-500 `}
                 >
                   <div className="flex items-center capitalize">
                     <span className="mr-2 mb-1">{item.icon}</span>
@@ -25,8 +25,8 @@ const NavItem = ({ item }) => {
                   <CaretRight
                     weight="bold"
                     className={`${
-                      open ? "transform rotate-90" : ""
-                    } w-3 h-3 transition `}
+                      open ? "rotate-90 transform" : ""
+                    } h-3 w-3 transition `}
                   />
                 </div>
               </Disclosure.Button>
@@ -38,7 +38,7 @@ const NavItem = ({ item }) => {
                 leaveFrom="transform scale-100 opacity-100"
                 leaveTo="transform scale-95 opacity-0"
               >
-                <Disclosure.Panel className="ml-3 my-1 border-l space-y-2">
+                <Disclosure.Panel className="my-1 ml-3 space-y-2 border-l">
                   {/* Recursively using navitem here */}
                   {item.submenu.map((item) => (
                     <NavItem key={item.name} item={item} />
@@ -53,7 +53,7 @@ const NavItem = ({ item }) => {
           <div
             className={`${
               router.pathname == item.route && " text-primary-500 "
-            }  py-1 px-4 rounded-lg font-medium transition duration-200 text-sm cursor-pointer  hover:text-primary-500 flex items-center justify-between`}
+            }  flex cursor-pointer items-center justify-between rounded-lg py-1 px-4 text-sm  font-medium transition duration-200 hover:text-primary-500`}
           >
             <div className="flex items-center capitalize">
               <span className="mr-2">{item.icon}</span>
