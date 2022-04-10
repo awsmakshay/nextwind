@@ -1,6 +1,6 @@
 import { Popover, Transition } from "@headlessui/react";
 import Link from "next/link";
-import { Gear, GearSix, SignOut, User, UserCircle } from "phosphor-react";
+import { GearSix, SignOut, User, UserCircle } from "phosphor-react";
 import { Fragment } from "react";
 
 export default function Profile() {

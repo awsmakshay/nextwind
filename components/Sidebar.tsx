@@ -41,7 +41,7 @@ const Sidebar = () => {
       <div
         className={`${
           !isOpen && "-translate-x-full"
-        }  bg-white  border-r  z-50 flex flex-col justify-between text-gray-500  w-64 space-y-6  min-h-screen  absolute inset-y-0 left-0 transform md:relative md:translate-x-0 transition duration-200 ease-in-out`}
+        }  bg-white  border-r  z-50 flex flex-col justify-between text-gray-500  w-64 space-y-6 px-2  min-h-screen  absolute inset-y-0 left-0 transform md:relative md:translate-x-0 transition duration-200 ease-in-out`}
       >
         <div className="px-2">
           {/* logo */}

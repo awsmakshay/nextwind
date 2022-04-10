@@ -1,8 +1,11 @@
 import Container from "./Container";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
+type LayoutProps = {
+  children: React.ReactNode;
+};
 
-const Layout = ({ children }) => {
+const Layout = ({ children }: LayoutProps) => {
   return (
     <div className="relative min-h-screen md:flex ">
       <Sidebar />

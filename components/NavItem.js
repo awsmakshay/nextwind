@@ -26,7 +26,7 @@ const NavItem = ({ item }) => {
                     weight="bold"
                     className={`${
                       open ? "transform rotate-90" : ""
-                    } w-4 h-4 transition `}
+                    } w-3 h-3 transition `}
                   />
                 </div>
               </Disclosure.Button>

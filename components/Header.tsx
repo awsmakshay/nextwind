@@ -7,7 +7,7 @@ const Header = () => {
       <Container>
         <div className="h-16 flex items-center justify-between ">
           <div>
-            <div className="text-lg text-gray-700 font-bold">Dashboard </div>
+            <div className=" text-gray-700 font-medium">Dashboard </div>
           </div>
           <div>
             <Profile />
