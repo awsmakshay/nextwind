@@ -1,9 +1,10 @@
 import { Popover, Transition } from "@headlessui/react";
 import Link from "next/link";
-import { User } from "phosphor-react";
+import { Gear, GearSix, SignOut, User, UserCircle } from "phosphor-react";
 import { Fragment } from "react";
 
 export default function Profile() {
+  const iconClasses = "w-5 h-5 mr-2";
   return (
     <Popover className="relative">
       {({ open }) => (
@@ -36,13 +37,24 @@ export default function Profile() {
                   </div>
                 </div>
                 <div className="p-4 flex flex-col ">
-                  <Button>My profile</Button>
+                  <Button>
+                    <UserCircle className={iconClasses} />
+                    My Profile
+                  </Button>
                   <Link href="/admin">
                     <a>
-                      <Button>Settings</Button>
+                      <Button>
+                        {" "}
+                        <GearSix className={iconClasses} />
+                        Settings
+                      </Button>
                     </a>
                   </Link>
-                  <Button>Sign out</Button>
+                  <Button>
+                    {" "}
+                    <SignOut className={iconClasses} />
+                    Sign out
+                  </Button>
                 </div>
               </div>
             </Popover.Panel>
@@ -55,7 +67,7 @@ export default function Profile() {
 
 function Button({ children }) {
   return (
-    <div className="p-2 hover:bg-gray-100 text-gray-700 transition cursor-pointer rounded-lg text-sm hover:text-primary-500 font-medium">
+    <div className="p-2 hover:bg-gray-100 flex items-center  text-gray-600 transition cursor-pointer rounded-lg text-sm hover:text-primary-500 font-medium">
       {children}
     </div>
   );
