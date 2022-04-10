@@ -8,6 +8,7 @@ import NavItem from "./NavItem";
 // TODO: Replace a tag with next link
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  console.count("sidebar render");
 
   const handleOpen = () => {
     setIsOpen(!isOpen);
@@ -54,7 +55,7 @@ const Sidebar = () => {
           </Link>
           {/* nav */}
           <nav className="space-y-2 pt-4 mt-6 mx-3">
-            <IconContext.Provider value={{ size: "26" }}>
+            <IconContext.Provider value={{ size: "25" }}>
               {navItems.map((item) => (
                 <NavItem key={item.name} item={item} />
               ))}

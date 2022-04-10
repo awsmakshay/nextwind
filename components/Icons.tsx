@@ -1,6 +1,6 @@
-import * as React from "react";
+import React from "react";
 
-export const Globe = (props) => {
+export const Globe = (props: any) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +41,7 @@ export const Globe = (props) => {
   );
 };
 
-export const SortIcon = (props) => {
+export const SortIcon = (props: any) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +88,7 @@ export const SortIcon = (props) => {
   );
 };
 
-export const SortUpIcon = (props) => {
+export const SortUpIcon = (props: any) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -119,7 +119,7 @@ export const SortUpIcon = (props) => {
   );
 };
 
-export const SortDownIcon = (props) => {
+export const SortDownIcon = (props: any) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -150,7 +150,7 @@ export const SortDownIcon = (props) => {
   );
 };
 
-export const Dollar = (props) => {
+export const Dollar = (props: any) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -180,7 +180,7 @@ export const Dollar = (props) => {
   );
 };
 
-export const Building = (props) => {
+export const Building = (props: any) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -250,7 +250,7 @@ export const Building = (props) => {
   );
 };
 
-export const Bell = (props) => {
+export const Bell = (props: any) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -280,7 +280,7 @@ export const Bell = (props) => {
   );
 };
 
-export const MenuIcon = (props) => {
+export const MenuIcon = (props: any) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -315,7 +315,7 @@ export const MenuIcon = (props) => {
   );
 };
 
-export const Close = (props) => {
+export const Close = (props: any) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -343,7 +343,7 @@ export const Close = (props) => {
   );
 };
 
-export const ChartBar = (props) => {
+export const ChartBar = (props: any) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -389,7 +389,7 @@ export const ChartBar = (props) => {
   );
 };
 
-export const UserCircleGear = (props) => {
+export const UserCircleGear = (props: any) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -486,7 +486,7 @@ export const UserCircleGear = (props) => {
   );
 };
 
-export const CaretRight = (props) => {
+export const CaretRight = (props: any) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -508,7 +508,7 @@ export const CaretRight = (props) => {
   );
 };
 
-export const SquaresFour = (props) => {
+export const SquaresFour = (props: any) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -526,7 +526,7 @@ export const SquaresFour = (props) => {
   );
 };
 
-export const Home = (props) => {
+export const Home = (props: any) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -547,7 +547,7 @@ export const Home = (props) => {
     </svg>
   );
 };
-export const Hamburger = (props) => {
+export const Hamburger = (props: any) => {
   return (
     <svg
       className="h-5 w-5"
@@ -569,7 +569,7 @@ export const Hamburger = (props) => {
 
 // SVG Icon template copy this block to add new icon and replace svg
 // Keep this block at the end for easy access to duplicate
-export const Template = (props) => {
+export const Template = (props: any) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
