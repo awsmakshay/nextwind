@@ -7,9 +7,7 @@ const Header = () => {
       <Container>
         <div className="h-16 flex items-center justify-between ">
           <div>
-            <div className="text-lg text-gray-700 font-bold">
-              Welcome Akshay{" "}
-            </div>
+            <div className="text-lg text-gray-700 font-bold">Dashboard </div>
           </div>
           <div>
             <Profile />

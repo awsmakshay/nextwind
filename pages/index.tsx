@@ -9,7 +9,7 @@ type Props = {
 
 const Card = ({ children }: Props) => {
   return (
-    <div className="rounded-md shadow-lg bg-white py-4 px-6 h-80 ">
+    <div className="rounded-md shadow-md bg-white py-4 px-6 h-80 ">
       {children}
     </div>
   );
@@ -30,9 +30,7 @@ const Home = () => {
               <div className="flex  items-center justify-between">
                 <div className="capitalize flex-1 pr-4">
                   <div className="flex-col items-center justify-center   ">
-                    <div className="text-gray-600 font-medium ">
-                      {item.name}
-                    </div>
+                    <div className="text-gray-600 font-medium "></div>
                   </div>
                 </div>
               </div>

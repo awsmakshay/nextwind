@@ -1,8 +1,11 @@
 import {
+  Briefcase,
+  Calendar,
   ChartBar,
   Compass,
   House,
   Note,
+  ShieldCheck,
   User,
   UserCircleGear,
   UserCirclePlus,
@@ -14,26 +17,26 @@ const navItems = [
   {
     name: "dashboard",
     route: "/",
-    icon: <House />,
+    icon: <House weight="duotone" />,
   },
   {
     name: "directions",
     route: "/directions",
-    icon: <Compass />,
+    icon: <Compass weight="duotone" />,
     submenu: [
       {
         name: "members",
-        icon: <User />,
+        icon: <User weight="duotone" />,
         route: "/directions/members",
       },
       {
         name: "docs",
-        icon: <Note />,
+        icon: <Note weight="duotone" />,
         route: "/directions/docs",
       },
       {
         name: "add users",
-        icon: <UserCirclePlus />,
+        icon: <UserCirclePlus weight="duotone" />,
         route: "/directions/adduser",
       },
     ],
@@ -41,12 +44,27 @@ const navItems = [
   {
     name: "admin",
     route: "/admin",
-    icon: <UserCircleGear />,
+    icon: <UserCircleGear weight="duotone" />,
   },
   {
     name: "insights",
     route: "/insights",
-    icon: <ChartBar />,
+    icon: <ChartBar weight="duotone" />,
+  },
+  {
+    name: "Customers",
+    route: "/Customers",
+    icon: <Briefcase weight="duotone" />,
+  },
+  {
+    name: "authentication",
+    route: "/authentication",
+    icon: <ShieldCheck weight="duotone" />,
+  },
+  {
+    name: "calendar",
+    route: "/calendar",
+    icon: <Calendar weight="duotone" />,
   },
 ];
 

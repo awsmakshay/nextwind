@@ -41,12 +41,12 @@ const Sidebar = () => {
       <div
         className={`${
           !isOpen && "-translate-x-full"
-        }  bg-gray-100 z-50 flex flex-col justify-between text-gray-500  w-64 space-y-6  min-h-screen  absolute inset-y-0 left-0 transform md:relative md:translate-x-0 transition duration-200 ease-in-out`}
+        }  bg-white  border-r  z-50 flex flex-col justify-between text-gray-500  w-64 space-y-6  min-h-screen  absolute inset-y-0 left-0 transform md:relative md:translate-x-0 transition duration-200 ease-in-out`}
       >
-        <div>
+        <div className="px-2">
           {/* logo */}
           <Link href="/" passHref>
-            <div className="flex items-center space-x-2 px-4 h-16 cursor-pointer bg-gray-50">
+            <div className="flex items-center space-x-2 px-4 h-16 cursor-pointer ">
               <span className="text-2xl font-bold  flex items-center">
                 <SquaresFour className="h-8 w-8 mr-2 text-red-400" />
                 App Logo
@@ -54,7 +54,7 @@ const Sidebar = () => {
             </div>
           </Link>
           {/* nav */}
-          <nav className="space-y-2 pt-4 mt-6 mx-3">
+          <nav className="space-y-2 pt-4 ">
             <IconContext.Provider value={{ size: "25" }}>
               {navItems.map((item) => (
                 <NavItem key={item.name} item={item} />
