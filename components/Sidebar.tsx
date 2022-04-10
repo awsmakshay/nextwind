@@ -54,8 +54,8 @@ const Sidebar = () => {
             </div>
           </Link>
           {/* nav */}
-          <nav className="space-y-2 pt-4 ">
-            <IconContext.Provider value={{ size: "25" }}>
+          <nav className="space-y-3 pt-4 ">
+            <IconContext.Provider value={{ size: "23" }}>
               {navItems.map((item) => (
                 <NavItem key={item.name} item={item} />
               ))}

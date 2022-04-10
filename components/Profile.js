@@ -22,7 +22,7 @@ export default function Profile() {
             leaveTo="opacity-0 translate-y-1"
           >
             <Popover.Panel className="absolute z-10 px-4 mt-2 transform sm:px-0 right-0">
-              <div className="w-max rounded-lg shadow-smooth bg-white ">
+              <div className="w-max rounded-lg shadow-smooth bg-white border ">
                 <div className="flex space-x-3 p-4 border-b border-gray-200">
                   <div>
                     <div className="border-2 rounded-lg p-2 ">
