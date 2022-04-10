@@ -10,7 +10,7 @@ export default function Profile() {
       {({ open }) => (
         <>
           <Popover.Button className={`border-2  rounded-lg p-2`}>
-            <User className="w-6 h-6" />
+            <User weight="duotone" className="w-6 h-6 text-primary-500" />
           </Popover.Button>
           <Transition
             as={Fragment}
@@ -26,7 +26,10 @@ export default function Profile() {
                 <div className="flex space-x-3 p-4 border-b border-gray-200">
                   <div>
                     <div className="border-2 rounded-lg p-2 ">
-                      <User className="w-6 h-6" />
+                      <User
+                        weight="duotone"
+                        className="w-6 h-6 text-primary-500"
+                      />
                     </div>
                   </div>
                   <div>
@@ -38,21 +41,21 @@ export default function Profile() {
                 </div>
                 <div className="p-4 flex flex-col ">
                   <Button>
-                    <UserCircle className={iconClasses} />
+                    <UserCircle weight="duotone" className={iconClasses} />
                     My Profile
                   </Button>
                   <Link href="/admin">
                     <a>
                       <Button>
                         {" "}
-                        <GearSix className={iconClasses} />
+                        <GearSix weight="duotone" className={iconClasses} />
                         Settings
                       </Button>
                     </a>
                   </Link>
                   <Button>
                     {" "}
-                    <SignOut className={iconClasses} />
+                    <SignOut weight="duotone" className={iconClasses} />
                     Sign out
                   </Button>
                 </div>

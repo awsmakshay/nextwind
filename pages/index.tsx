@@ -23,7 +23,7 @@ const Home = () => {
         <meta name="description" content="Dashboard" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="grid py-12 grid-cols-1 md:grid-cols-2  gap-5">
+      <div className="grid py-12 grid-cols-1 md:grid-cols-2  gap-8">
         {dashboardItems.map((item, index) => (
           <div key={index}>
             <Card>
