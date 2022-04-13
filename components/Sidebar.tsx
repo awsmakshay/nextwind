@@ -8,7 +8,6 @@ import NavItem from "./NavItem";
 // TODO: Replace a tag with next link
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  console.count("sidebar render");
 
   const handleOpen = () => {
     setIsOpen(!isOpen);
@@ -37,12 +36,22 @@ const Sidebar = () => {
           </>
         </button>
       </div>
+
+      {/* mobile menu  */}
+      {isOpen && (
+        <div className="  absolute z-20 w-full bg-white pr-6 transition dark:bg-gray-700 dark:text-gray-200 md:hidden">
+          <nav className=" space-y-3 py-4 ">
+            <IconContext.Provider value={{ size: "23" }}>
+              {navItems.map((item) => (
+                <NavItem key={item.name} item={item} />
+              ))}
+            </IconContext.Provider>
+          </nav>
+        </div>
+      )}
       {/* sidebar */}
-      <div
-        className={`${
-          !isOpen && "-translate-x-full"
-        }  absolute  inset-y-0  left-0 z-50 flex min-h-screen w-64  transform flex-col justify-between  space-y-6  border-r bg-white px-2 text-gray-500 transition duration-200 ease-in-out dark:border-gray-600 dark:bg-gray-800 dark:text-gray-200 md:relative md:translate-x-0`}
-      >
+
+      <div className="absolute inset-y-0  left-0  z-50 hidden h-screen w-64 transform  flex-col justify-between space-y-6  overflow-y-scroll  border-r bg-white px-2 text-gray-500 transition duration-200 ease-in-out dark:border-gray-600 dark:bg-gray-800 dark:text-gray-200 md:relative md:flex  ">
         <div className="px-2">
           {/* logo */}
           <Link href="/" passHref>
