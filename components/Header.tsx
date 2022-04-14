@@ -1,5 +1,6 @@
 import Container from "./Container";
 import Profile from "./Profile";
+import ThemeToggle from "./ThemeToggle";
 
 const Header = () => {
   return (
@@ -11,7 +12,8 @@ const Header = () => {
               Dashboard{" "}
             </div>
           </div>
-          <div>
+          <div className="flex space-x-2">
+            <ThemeToggle />
             <Profile />
           </div>
         </div>
