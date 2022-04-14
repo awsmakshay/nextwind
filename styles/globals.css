@@ -6,7 +6,7 @@
 /* Custom scrollbar  */
 /* width */
 ::-webkit-scrollbar {
-  width: 11px;
+  width: 8px;
   height: 10px;
 }
 
@@ -17,10 +17,10 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  @apply bg-primary-400 dark:bg-primary-800;
+  @apply bg-gray-300 dark:bg-gray-700;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-primary-500 dark:bg-primary-700;
+  @apply bg-gray-400 dark:bg-gray-700;
 }

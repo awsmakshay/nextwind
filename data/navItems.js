@@ -11,8 +11,6 @@ import {
   UserCirclePlus,
 } from "phosphor-react";
 
-// const iconClasses = " text-primary-600";
-
 const navItems = [
   {
     name: "dashboard",

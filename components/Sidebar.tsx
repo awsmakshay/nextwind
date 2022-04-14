@@ -17,7 +17,7 @@ const Sidebar = () => {
   return (
     <>
       {/* mobile menu bar */}
-      <div className="flex justify-between bg-gray-200 dark:bg-gray-700 dark:text-gray-200 md:hidden ">
+      <div className="flex justify-between bg-gray-200 text-gray-600 dark:bg-gray-700 dark:text-gray-200 md:hidden ">
         {/* logo */}
         <Link href="/">
           <a className="block p-4 font-bold">App Logo</a>
@@ -39,8 +39,8 @@ const Sidebar = () => {
 
       {/* mobile menu  */}
       {isOpen && (
-        <div className="  absolute z-20 w-full bg-white pr-6 transition dark:bg-gray-700 dark:text-gray-200 md:hidden">
-          <nav className=" space-y-3 py-4 ">
+        <div className="  absolute z-20 w-full bg-white pr-6 text-gray-600 transition dark:bg-gray-700 dark:text-gray-200 md:hidden">
+          <nav className=" space-y-2 py-4 ">
             <IconContext.Provider value={{ size: "23" }}>
               {navItems.map((item) => (
                 <NavItem key={item.name} item={item} />
@@ -51,7 +51,7 @@ const Sidebar = () => {
       )}
       {/* sidebar */}
 
-      <div className="absolute inset-y-0  left-0  z-50 hidden h-screen w-64 transform  flex-col justify-between space-y-6  overflow-y-scroll  border-r bg-white px-2 text-gray-500 transition duration-200 ease-in-out dark:border-gray-600 dark:bg-gray-800 dark:text-gray-200 md:relative md:flex  ">
+      <div className="absolute inset-y-0  left-0  z-50 hidden h-screen w-64 transform  flex-col justify-between space-y-6  overflow-y-scroll  border-r bg-white px-2 text-gray-600 transition duration-200 ease-in-out dark:border-gray-600 dark:bg-gray-800 dark:text-gray-200 md:relative md:flex  ">
         <div className="px-2">
           {/* logo */}
           <Link href="/" passHref>
@@ -63,7 +63,7 @@ const Sidebar = () => {
             </div>
           </Link>
           {/* nav */}
-          <nav className="space-y-3 pt-4 ">
+          <nav className="space-y-2 pt-4 ">
             <IconContext.Provider value={{ size: "23" }}>
               {navItems.map((item) => (
                 <NavItem key={item.name} item={item} />

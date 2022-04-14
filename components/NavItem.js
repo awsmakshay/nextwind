@@ -16,16 +16,18 @@ const NavItem = ({ item }) => {
                 <div
                   className={`${
                     router.pathname == item.route && "text-primary-500 "
+                  } ${
+                    open && " text-primary-500"
                   } flex  items-center justify-between rounded-lg  py-1 px-4 text-sm font-medium  transition duration-200 hover:text-primary-500 `}
                 >
                   <div className="flex items-center capitalize">
-                    <span className="mr-2 mb-1">{item.icon}</span>
+                    <span className="mr-2 mb-1 p-1.5">{item.icon}</span>
                     {item.name}
                   </div>
                   <CaretRight
                     weight="bold"
                     className={`${
-                      open ? "rotate-90 transform" : ""
+                      open ? "rotate-90 transform text-primary-500" : ""
                     } h-3 w-3 transition `}
                   />
                 </div>
@@ -38,7 +40,7 @@ const NavItem = ({ item }) => {
                 leaveFrom="transform scale-100 opacity-100"
                 leaveTo="transform scale-95 opacity-0"
               >
-                <Disclosure.Panel className="my-1 ml-3 space-y-2 border-l dark:border-gray-600">
+                <Disclosure.Panel className="my-1 ml-3 space-y-1 border-l dark:border-gray-600">
                   {/* Recursively using navitem here */}
                   {item.submenu.map((item) => (
                     <NavItem key={item.name} item={item} />
@@ -52,11 +54,18 @@ const NavItem = ({ item }) => {
         <Link href={item.route} passHref>
           <div
             className={`${
-              router.pathname == item.route && " text-primary-500 "
+              router.pathname == item.route && " text-primary-500  "
             }  flex cursor-pointer items-center justify-between rounded-lg py-1 px-4 text-sm  font-medium transition duration-200 hover:text-primary-500`}
           >
             <div className="flex items-center capitalize">
-              <span className="mr-2">{item.icon}</span>
+              <span
+                className={`${
+                  router.pathname == item.route &&
+                  " bg-primary-100 dark:bg-primary-900  "
+                }  mr-2 rounded-lg  p-1.5 `}
+              >
+                {item.icon}
+              </span>
               {item.name}
             </div>
           </div>
