@@ -51,7 +51,7 @@ const Sidebar = () => {
       )}
       {/* sidebar */}
 
-      <div className="absolute inset-y-0  left-0  z-50 hidden h-screen w-64 transform  flex-col justify-between space-y-6  overflow-y-scroll  border-r bg-white px-2 text-gray-600 transition duration-200 ease-in-out dark:border-gray-600 dark:bg-gray-800 dark:text-gray-200 md:relative md:flex  ">
+      <div className="absolute inset-y-0  left-0  z-50 hidden h-screen w-64 transform  flex-col justify-between space-y-6  overflow-y-scroll  border-r-2 bg-white px-2 text-gray-600 transition duration-200 ease-in-out dark:border-gray-700 dark:bg-gray-800 dark:text-gray-200 md:relative md:flex  ">
         <div className="px-2">
           {/* logo */}
           <Link href="/" passHref>
