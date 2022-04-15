@@ -33,8 +33,8 @@ const Members = () => {
   );
   return (
     <div>
-      <div className="rounded-lg bg-white p-4 shadow-md">
-        <div className="mb-4 flex items-center justify-between text-lg font-medium text-gray-600">
+      <div className="rounded-lg bg-white p-4 shadow-md dark:bg-gray-800">
+        <div className="mb-4 flex items-center justify-between px-2 text-lg font-medium text-gray-600 dark:text-gray-100">
           <div className="">Members</div>
           <div className="flex space-x-4">
             <MagnifyingGlass className="mr-2 h-6 w-6" />
