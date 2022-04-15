@@ -14,7 +14,7 @@ const DarkModeToggle = () => {
   return (
     <div
       onClick={() => toggleDarkMode(!isDarkMode)}
-      className={` flex cursor-pointer items-center justify-center rounded-lg border-2 px-0.5 hover:bg-gray-200  dark:border-gray-600  dark:hover:bg-gray-700`}
+      className={` flex cursor-pointer items-center justify-center rounded-lg border-2 px-0.5 hover:bg-gray-200  dark:border-gray-700 dark:hover:bg-gray-800`}
     >
       <button aria-label="Toggle Dark Mode" type="button">
         <svg

@@ -10,7 +10,7 @@ export default function Profile() {
       {({ open }) => (
         <>
           <Popover.Button
-            className={`rounded-lg  border-2 p-2 dark:border-gray-600`}
+            className={`rounded-lg  border-2 p-2 dark:border-gray-700`}
           >
             <User weight="duotone" className="h-6 w-6 text-primary-500" />
           </Popover.Button>
@@ -24,10 +24,10 @@ export default function Profile() {
             leaveTo="opacity-0 translate-y-1"
           >
             <Popover.Panel className="absolute right-0 z-10 mt-2 transform px-4 sm:px-0">
-              <div className="w-max rounded-lg border bg-white shadow-smooth dark:border-gray-600 dark:bg-gray-700 dark:shadow-none ">
-                <div className="flex space-x-3 border-b border-gray-200 p-4 dark:border-gray-600">
+              <div className="w-max rounded-lg border bg-white shadow-smooth dark:border-gray-700 dark:bg-gray-800 dark:shadow-none ">
+                <div className="flex space-x-3 border-b border-gray-200 p-4 dark:border-gray-700">
                   <div>
-                    <div className="rounded-lg border-2 p-2 dark:border-gray-600 ">
+                    <div className="rounded-lg border-2 p-2 dark:border-gray-700 ">
                       <User
                         weight="duotone"
                         className="h-6 w-6 text-primary-500"
@@ -74,7 +74,7 @@ export default function Profile() {
 
 function Button({ children }) {
   return (
-    <div className="flex cursor-pointer items-center rounded-lg  p-2 text-sm font-medium text-gray-600 transition hover:bg-gray-100 hover:text-primary-500 dark:text-gray-200 dark:hover:bg-gray-800">
+    <div className="flex cursor-pointer items-center rounded-lg  p-2 text-sm font-medium text-gray-600 transition hover:bg-gray-100 hover:text-primary-500 dark:text-gray-200 dark:hover:bg-gray-900">
       {children}
     </div>
   );

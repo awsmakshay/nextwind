@@ -56,7 +56,7 @@ const Table = ({ columns, data }) => {
                 <tr
                   key={i}
                   {...row.getRowProps()}
-                  className="border-t-2 border-dashed border-gray-100 dark:border-gray-700"
+                  className="border-t-2 border-dashed border-gray-100 dark:border-gray-900"
                 >
                   {row.cells.map((cell, index) => {
                     return (
