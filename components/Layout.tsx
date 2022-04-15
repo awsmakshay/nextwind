@@ -11,7 +11,7 @@ const Layout = ({ children }: LayoutProps) => {
       <Sidebar />
       <div className="flex-1 bg-gray-100 dark:bg-gray-900 md:h-screen md:overflow-y-scroll">
         <Header />
-        <Container className="min-h-screen">{children}</Container>
+        <Container className="min-h-screen py-12">{children}</Container>
       </div>
     </div>
   );

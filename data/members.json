@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "first_name": "Lise",
+    "last_name": "Becerro",
+    "email": "lbecerro0@accuweather.com",
+    "gender": "Female",
+    "company": "Cronin, Dare and Gutmann"
+  },
+  {
+    "id": 2,
+    "first_name": "Gizela",
+    "last_name": "Wimes",
+    "email": "gwimes1@opera.com",
+    "gender": "Female",
+    "company": "Veum Group"
+  },
+  {
+    "id": 3,
+    "first_name": "Stephanie",
+    "last_name": "Hanselmann",
+    "email": "shanselmann2@china.com.cn",
+    "gender": "Female",
+    "company": "Mayert Group"
+  },
+  {
+    "id": 4,
+    "first_name": "Timmie",
+    "last_name": "Rowthorn",
+    "email": "trowthorn3@rambler.ru",
+    "gender": "Female",
+    "company": "Cassin and Sons"
+  },
+  {
+    "id": 5,
+    "first_name": "Patricio",
+    "last_name": "Berggren",
+    "email": "pberggren4@sciencedaily.com",
+    "gender": "Male",
+    "company": "Tromp-Herman"
+  },
+  {
+    "id": 6,
+    "first_name": "Jermayne",
+    "last_name": "Alwood",
+    "email": "jalwood5@mozilla.org",
+    "gender": "Agender",
+    "company": "Blick LLC"
+  },
+  {
+    "id": 7,
+    "first_name": "Beverie",
+    "last_name": "Kirlin",
+    "email": "bkirlin6@ow.ly",
+    "gender": "Female",
+    "company": "Lynch, Hauck and Berge"
+  },
+  {
+    "id": 8,
+    "first_name": "Carlin",
+    "last_name": "Langtry",
+    "email": "clangtry7@amazonaws.com",
+    "gender": "Male",
+    "company": "Feeney-D'Amore"
+  },
+  {
+    "id": 9,
+    "first_name": "Shayne",
+    "last_name": "Moffett",
+    "email": "smoffett8@va.gov",
+    "gender": "Female",
+    "company": "Fisher LLC"
+  },
+  {
+    "id": 10,
+    "first_name": "Justinian",
+    "last_name": "Butt Gow",
+    "email": "jbuttgow9@china.com.cn",
+    "gender": "Male",
+    "company": "Jaskolski, Wintheiser and Bins"
+  }
+]
