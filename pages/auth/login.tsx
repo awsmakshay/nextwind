@@ -6,16 +6,16 @@ const Login = () => {
   return (
     <div>
       <div className="flex h-screen ">
-        <div className="bg-primary-50  w-7/12 hidden lg:flex flex-col items-center justify-center p-12">
-          <div className="text-2xl font-bold  flex items-center w-full">
-            <SquaresFour className="h-8 w-8 mr-2 text-red-400" />
+        <div className="hidden  w-7/12 flex-col items-center justify-center bg-primary-50 p-12 lg:flex">
+          <div className="flex w-full  items-center text-2xl font-bold">
+            <SquaresFour className="mr-2 h-8 w-8 text-primary-400" />
             App Logo
           </div>
           <img src="/images/analytics.svg" alt="analytics" className="h-full" />
         </div>
-        <div className="flex-col flex-1 flex items-center justify-center bg-white px-20">
-          <div className=" max-w-lg w-full">
-            <h1 className="text-xl font-bold text-gray-600 sm:text-3xl  mb-10">
+        <div className="flex flex-1 flex-col items-center justify-center bg-white px-20">
+          <div className=" w-full max-w-lg">
+            <h1 className="mb-10 text-xl font-bold text-gray-600  sm:text-3xl">
               Sign in
             </h1>
 
@@ -32,8 +32,8 @@ const Login = () => {
                       placeholder="Enter email"
                       required
                     />
-                    <span className="absolute inset-y-0 inline-flex items-center right-4">
-                      <At className="w-6 h-6 text-gray-400" />
+                    <span className="absolute inset-y-0 right-4 inline-flex items-center">
+                      <At className="h-6 w-6 text-gray-400" />
                     </span>
                   </div>
                 </div>
@@ -48,21 +48,21 @@ const Login = () => {
                       placeholder="Enter password"
                       required
                     />
-                    <span className="absolute inset-y-0 inline-flex items-center right-4">
-                      <Password className="w-6 h-6 text-gray-400" />
+                    <span className="absolute inset-y-0 right-4 inline-flex items-center">
+                      <Password className="h-6 w-6 text-gray-400" />
                     </span>
                   </div>
                 </div>
               </div>
 
               <Button className="mt-8">
-                Sign In <ArrowRight weight="bold" className="w-4  h-4 ml-2 " />
+                Sign In <ArrowRight weight="bold" className="ml-2  h-4 w-4 " />
               </Button>
             </form>
-            <p className="text-sm text-center text-gray-500 mt-10">
+            <p className="mt-10 text-center text-sm text-gray-500">
               Don&apos;t have an account?{" "}
               <a
-                className="underline decoration-2 decoration-primary-500"
+                className="underline decoration-primary-500 decoration-2"
                 href=""
               >
                 Sign up

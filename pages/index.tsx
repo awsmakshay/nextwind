@@ -15,6 +15,7 @@ const Card = ({ children }: Props) => {
   );
 };
 
+// TODO: Next SEO for title and description
 const Home = () => {
   return (
     <div>

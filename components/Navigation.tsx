@@ -57,7 +57,7 @@ const Navigation = () => {
           <Link href="/" passHref>
             <div className="flex h-16 cursor-pointer items-center space-x-2 px-4 ">
               <span className="flex items-center text-2xl font-bold">
-                <SquaresFour className="mr-2 h-8 w-8 text-red-400" />
+                <SquaresFour className="mr-2 h-8 w-8 text-primary-400" />
                 App Logo
               </span>
             </div>

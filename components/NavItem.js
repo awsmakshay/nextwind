@@ -21,7 +21,13 @@ const NavItem = ({ item, setIsOpen }) => {
                   } flex  items-center justify-between rounded-lg  py-1 px-4 text-sm font-medium  transition duration-200 hover:text-primary-500 `}
                 >
                   <div className="flex items-center capitalize">
-                    <span className="mr-2 mb-1 p-1.5">{item.icon}</span>
+                    <span
+                      className={`${
+                        open && "bg-primary-100 dark:bg-primary-900 "
+                      }mr-2 mb-1 rounded-lg p-1.5`}
+                    >
+                      {item.icon}
+                    </span>
                     {item.name}
                   </div>
                   <CaretRight
@@ -40,7 +46,7 @@ const NavItem = ({ item, setIsOpen }) => {
                 leaveFrom="transform scale-100 opacity-100"
                 leaveTo="transform scale-95 opacity-0"
               >
-                <Disclosure.Panel className="my-1 ml-3 space-y-1 border-l dark:border-gray-600">
+                <Disclosure.Panel className="my-1 ml-4  border-l dark:border-gray-600">
                   {/* Recursively using navitem here */}
                   {item.submenu.map((item) => (
                     <NavItem
