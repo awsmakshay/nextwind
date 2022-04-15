@@ -12,7 +12,7 @@ const Table = ({ columns, data }) => {
       useSortBy
     );
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col overflow-x-scroll">
       <div>
         <table {...getTableProps()} className="relative min-w-full text-sm ">
           <thead className="w-full bg-gray-100 ">
