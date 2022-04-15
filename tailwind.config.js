@@ -24,7 +24,6 @@ module.exports = {
         smooth: "0 0 50px 0 rgb(82 63 105 / 15%)",
       },
       colors: {
-        gray: colors.slate,
         primary: colors.sky,
       },
       fontFamily: {
