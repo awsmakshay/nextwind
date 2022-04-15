@@ -6,7 +6,7 @@ import { Close, Hamburger, SquaresFour } from "./Icons";
 import NavItem from "./NavItem";
 
 // TODO: Replace a tag with next link
-const Sidebar = () => {
+const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleOpen = () => {
@@ -39,7 +39,7 @@ const Sidebar = () => {
 
       {/* mobile menu  */}
       {isOpen && (
-        <div className="  absolute z-20 w-full bg-white pr-6 text-gray-600 transition dark:bg-gray-700 dark:text-gray-200 md:hidden">
+        <div className="  absolute z-20 w-full border-b-2 bg-white pr-6 text-gray-600 transition dark:border-gray-600 dark:bg-gray-700 dark:text-gray-200 md:hidden">
           <nav className=" space-y-2 py-4 ">
             <IconContext.Provider value={{ size: "23" }}>
               {navItems.map((item) => (
@@ -76,4 +76,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default Navigation;
