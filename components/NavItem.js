@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { CaretRight } from "phosphor-react";
 
-const NavItem = ({ item }) => {
+const NavItem = ({ item, setIsOpen }) => {
   const router = useRouter();
   // If there is submenu in item, recursively show it in navitems for multilevel menus
   return (
@@ -43,7 +43,11 @@ const NavItem = ({ item }) => {
                 <Disclosure.Panel className="my-1 ml-3 space-y-1 border-l dark:border-gray-600">
                   {/* Recursively using navitem here */}
                   {item.submenu.map((item) => (
-                    <NavItem key={item.name} item={item} />
+                    <NavItem
+                      key={item.name}
+                      item={item}
+                      setIsOpen={setIsOpen}
+                    />
                   ))}
                 </Disclosure.Panel>
               </Transition>
@@ -53,6 +57,7 @@ const NavItem = ({ item }) => {
       ) : (
         <Link href={item.route} passHref>
           <div
+            onClick={() => setIsOpen(false)}
             className={`${
               router.pathname == item.route && " text-primary-500  "
             }  flex cursor-pointer items-center justify-between rounded-lg py-1 px-4 text-sm  font-medium transition duration-200 hover:text-primary-500`}

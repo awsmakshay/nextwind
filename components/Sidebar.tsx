@@ -43,7 +43,7 @@ const Sidebar = () => {
           <nav className=" space-y-2 py-4 ">
             <IconContext.Provider value={{ size: "23" }}>
               {navItems.map((item) => (
-                <NavItem key={item.name} item={item} />
+                <NavItem key={item.name} item={item} setIsOpen={setIsOpen} />
               ))}
             </IconContext.Provider>
           </nav>
@@ -66,7 +66,7 @@ const Sidebar = () => {
           <nav className="space-y-2 pt-4 ">
             <IconContext.Provider value={{ size: "23" }}>
               {navItems.map((item) => (
-                <NavItem key={item.name} item={item} />
+                <NavItem key={item.name} item={item} setIsOpen={setIsOpen} />
               ))}
             </IconContext.Provider>
           </nav>

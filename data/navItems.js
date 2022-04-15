@@ -19,7 +19,6 @@ const navItems = [
   },
   {
     name: "directions",
-    route: "/directions",
     icon: <Compass weight="duotone" />,
     submenu: [
       {
