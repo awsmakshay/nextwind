@@ -52,7 +52,7 @@ const Navigation = () => {
       {/* sidebar */}
 
       <div className="absolute inset-y-0  left-0  z-50 hidden h-screen w-64 transform  flex-col justify-between space-y-6  overflow-y-scroll  border-r-2 bg-white px-2 text-gray-600 transition duration-200 ease-in-out dark:border-gray-700 dark:bg-gray-800 dark:text-gray-200 md:relative md:flex  ">
-        <div className="px-2">
+        <div>
           {/* logo */}
           <Link href="/" passHref>
             <div className="flex h-16 cursor-pointer items-center space-x-2 px-4 ">
@@ -63,7 +63,7 @@ const Navigation = () => {
             </div>
           </Link>
           {/* nav */}
-          <nav className="space-y-2 pt-4 ">
+          <nav className="space-y-1 pt-4 ">
             <IconContext.Provider value={{ size: "23" }}>
               {navItems.map((item) => (
                 <NavItem key={item.name} item={item} setIsOpen={setIsOpen} />

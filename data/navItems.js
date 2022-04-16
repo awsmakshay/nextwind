@@ -38,6 +38,7 @@ const navItems = [
       },
     ],
   },
+
   {
     name: "admin",
     route: "/admin",

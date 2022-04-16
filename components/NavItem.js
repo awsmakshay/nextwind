@@ -14,18 +14,12 @@ const NavItem = ({ item, setIsOpen }) => {
             <>
               <Disclosure.Button className="w-full">
                 <div
-                  className={`${
-                    router.pathname == item.route && "text-primary-500 "
-                  } ${
-                    open && " text-primary-500"
-                  } flex  items-center justify-between rounded-lg  py-1 px-4 text-sm font-medium  transition duration-200 hover:text-primary-500 `}
+                  className={` ${
+                    open && " font-semibold text-gray-700 dark:text-gray-50"
+                  } flex  items-center justify-between rounded-lg  py-1 px-4 text-sm font-medium  transition duration-200 hover:text-primary-600 `}
                 >
                   <div className="flex items-center capitalize">
-                    <span
-                      className={`${
-                        open && "bg-primary-100 dark:bg-primary-900 "
-                      }mr-2 mb-1 rounded-lg p-1.5`}
-                    >
+                    <span className={`mr-2 mb-1 rounded-lg p-1.5`}>
                       {item.icon}
                     </span>
                     {item.name}
@@ -33,8 +27,8 @@ const NavItem = ({ item, setIsOpen }) => {
                   <CaretRight
                     weight="bold"
                     className={`${
-                      open ? "rotate-90 transform text-primary-500" : ""
-                    } h-3 w-3 transition `}
+                      open ? "rotate-90 transform " : ""
+                    } h-4 w-4 transition `}
                   />
                 </div>
               </Disclosure.Button>
@@ -46,7 +40,7 @@ const NavItem = ({ item, setIsOpen }) => {
                 leaveFrom="transform scale-100 opacity-100"
                 leaveTo="transform scale-95 opacity-0"
               >
-                <Disclosure.Panel className="my-1 ml-4  border-l dark:border-gray-600">
+                <Disclosure.Panel className="mb-3 ml-6 dark:border-gray-600">
                   {/* Recursively using navitem here */}
                   {item.submenu.map((item) => (
                     <NavItem
@@ -65,8 +59,9 @@ const NavItem = ({ item, setIsOpen }) => {
           <div
             onClick={() => setIsOpen(false)}
             className={`${
-              router.pathname == item.route && " text-primary-500  "
-            }  flex cursor-pointer items-center justify-between rounded-lg py-1 px-4 text-sm  font-medium transition duration-200 hover:text-primary-500`}
+              router.pathname == item.route &&
+              " text-primary-600 dark:text-primary-400  "
+            }  flex cursor-pointer items-center justify-between rounded-lg py-1 px-4 text-sm  font-medium transition duration-200 hover:text-primary-600`}
           >
             <div className="flex items-center capitalize">
               <span
