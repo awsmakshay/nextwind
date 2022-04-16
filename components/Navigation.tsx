@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { IconContext } from "phosphor-react";
+import { IconContext, Lightning } from "phosphor-react";
 import { useState } from "react";
 import navItems from "../data/navItems";
 import { Close, Hamburger, SquaresFour } from "./Icons";
@@ -20,7 +20,7 @@ const Navigation = () => {
       <div className="flex justify-between bg-gray-200 text-gray-600 dark:bg-gray-700 dark:text-gray-200 md:hidden ">
         {/* logo */}
         <Link href="/">
-          <a className="block p-4 font-bold">App Logo</a>
+          <a className="block p-4 font-bold">TailDash</a>
         </Link>
         {/* mobile menu button */}
         <button
@@ -57,8 +57,11 @@ const Navigation = () => {
           <Link href="/" passHref>
             <div className="flex h-16 cursor-pointer items-center space-x-2 px-4 ">
               <span className="flex items-center text-2xl font-bold">
-                <SquaresFour className="mr-2 h-8 w-8 text-primary-400" />
-                App Logo
+                <Lightning
+                  weight="duotone"
+                  className="mr-2 h-8 w-8 text-primary-400"
+                />
+                TailDash
               </span>
             </div>
           </Link>
