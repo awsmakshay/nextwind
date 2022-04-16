@@ -35,7 +35,7 @@ const Members = () => {
   return (
     <div>
       <div className="rounded-lg bg-white p-4 shadow-md dark:bg-gray-800">
-        <div className="mb-4 flex items-center justify-between px-2 text-lg font-medium text-gray-600 dark:text-gray-100">
+        <div className="mb-4 flex flex-col justify-between space-y-3 px-2 text-lg font-medium text-gray-600 dark:text-gray-100 sm:flex-row sm:items-center sm:space-y-0">
           <div className="">Members</div>
           <div className="flex space-x-4">
             <div className="relative ">
