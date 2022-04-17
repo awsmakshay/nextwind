@@ -63,7 +63,7 @@ const Home = () => {
         />
       </div>
       <div className="grid grid-cols-1 gap-8  lg:grid-cols-2">
-        {dashboardItems.map((item, index) => (
+        {[...Array(4)].map((_, index) => (
           <div key={index}>
             <Card>
               <div className="flex  items-center justify-between">
