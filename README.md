@@ -13,7 +13,7 @@ Free and open source admin dashboard using Next JS & Tailwind CSS
 
 ## Live Demo
 
-Check out the live demo here : [NextWind](https://nextwind.vercel.app/)
+Check out the live demo here : [NextWind](https://dashnextwind.vercel.app/)
 
 ## Getting Started
 
