@@ -1,5 +1,11 @@
 import Link from "next/link";
-import { IconContext, Lightning, List, X } from "phosphor-react";
+import {
+  IconContext,
+  Lightning,
+  LightningSlash,
+  List,
+  X,
+} from "phosphor-react";
 import { useState } from "react";
 import navItems from "../data/navItems";
 import NavItem from "./NavItem";
@@ -19,7 +25,13 @@ const Navigation = () => {
       <div className="flex justify-between bg-gray-200 text-gray-600 dark:bg-gray-700 dark:text-gray-200 md:hidden ">
         {/* logo */}
         <Link href="/">
-          <a className="block p-4 font-bold">TailDash</a>
+          <a className="flex items-center p-4 font-bold">
+            <Lightning
+              weight="duotone"
+              className="mr-2 h-8 w-8 text-primary-400"
+            />{" "}
+            TailDash
+          </a>
         </Link>
         {/* mobile menu button */}
         <button
