@@ -11,7 +11,7 @@ import Input from "../../components/Input";
 
 const Login = () => {
   return (
-    <div>
+    <div className="light">
       <div className="flex h-screen ">
         <div className="hidden  w-7/12 flex-col items-center justify-center bg-primary-50 p-12 lg:flex">
           <div className="flex w-full  items-center text-2xl font-bold">
