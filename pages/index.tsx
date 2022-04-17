@@ -33,7 +33,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="mb-10 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+      <div className="mb-10 grid gap-4 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
         <InfoCard
           title="Net Profit"
           value="$12556"

@@ -1,8 +1,7 @@
 import Link from "next/link";
-import { IconContext, Lightning } from "phosphor-react";
+import { IconContext, Lightning, List, X } from "phosphor-react";
 import { useState } from "react";
 import navItems from "../data/navItems";
-import { Close, Hamburger, SquaresFour } from "./Icons";
 import NavItem from "./NavItem";
 
 // TODO: Replace a tag with next link
@@ -29,9 +28,9 @@ const Navigation = () => {
         >
           <>
             {isOpen ? (
-              <Close className={iconClasses} />
+              <X className={iconClasses} />
             ) : (
-              <Hamburger className={iconClasses} />
+              <List className={iconClasses} />
             )}
           </>
         </button>
