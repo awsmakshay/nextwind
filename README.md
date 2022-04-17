@@ -11,11 +11,23 @@ Free and open source admin dashboard based using Next JS & Tailwind CSS
 - Table using React Table
 - Written in TypeScript (Partially, Adopting incrementally)
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Live Demo
+
+Check out the live demo here : [TailDash](https://taildash.vercel.app/)
 
 ## Getting Started
 
-First, run the development server:
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+Install the project by running
+
+```bash
+npm install
+# or
+yarn
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
