@@ -1,5 +1,6 @@
 import { MagnifyingGlass } from "phosphor-react";
 import { ReactElement, useMemo } from "react";
+import Button from "../../components/Button";
 import Input from "../../components/Input";
 import Layout from "../../components/Layout";
 import Table from "../../components/Table";
@@ -38,12 +39,13 @@ const Members = () => {
         <div className="mb-4 flex flex-col justify-between space-y-3 px-2 text-lg font-medium text-gray-600 dark:text-gray-100 sm:flex-row sm:items-center sm:space-y-0">
           <div className="">Members</div>
           <div className="flex space-x-4">
-            <div className="relative ">
+            <div className="relative  ">
               <span className="absolute inset-y-0 right-4 inline-flex items-center">
                 <MagnifyingGlass className="mr-2 h-5 w-5 text-gray-500" />
               </span>
               <Input placeholder="Search" />
             </div>
+            <Button>Add</Button>
           </div>
         </div>
         <Table columns={columns} data={data} />
