@@ -30,7 +30,7 @@ const Navigation = () => {
               weight="duotone"
               className="mr-2 h-8 w-8 text-primary-400"
             />{" "}
-            TailDash
+            NextWind
           </a>
         </Link>
         {/* mobile menu button */}
@@ -72,7 +72,7 @@ const Navigation = () => {
                   weight="duotone"
                   className="mr-2 h-8 w-8 text-primary-400"
                 />
-                TailDash
+                NextWind
               </span>
             </div>
           </Link>

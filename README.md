@@ -1,6 +1,6 @@
-## TailDash
+## NextWind
 
-Free and open source admin dashboard based using Next JS & Tailwind CSS
+Free and open source admin dashboard using Next JS & Tailwind CSS
 
 ## Features
 
@@ -13,7 +13,7 @@ Free and open source admin dashboard based using Next JS & Tailwind CSS
 
 ## Live Demo
 
-Check out the live demo here : [TailDash](https://taildash.vercel.app/)
+Check out the live demo here : [NextWind](https://nextwind.vercel.app/)
 
 ## Getting Started
 
@@ -41,12 +41,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 
-![](https://tailwindcss.com/_next/static/media/social-card-large.f6878fd8df804f73ba3f1a271122105a.jpg)
-
 **Icons**: [Phosphor Icons React](https://www.npmjs.com/package/phosphor-react)
-
-![](https://phosphoricons.com/phosphor-opengraph.png)
-
 Phosphor supports tree-shaking, so your bundle only includes code for the icons you use.
 
 ## Learn More

@@ -19,7 +19,7 @@ const Login = () => {
               weight="duotone"
               className="mr-2 h-8 w-8 text-primary-400"
             />
-            TailDash
+            NextWind
           </div>
           <img src="/images/analytics.svg" alt="analytics" className="h-full" />
         </div>
