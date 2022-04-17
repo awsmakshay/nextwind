@@ -1,5 +1,4 @@
 import Head from "next/head";
-import dashboardItems from "../data/dashboardItems";
 import Layout from "../components/Layout";
 import { ReactElement } from "react";
 import InfoCard from "../components/InfoCard";
