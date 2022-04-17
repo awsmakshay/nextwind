@@ -4,7 +4,7 @@ import ThemeToggle from "./ThemeToggle";
 
 const Header = () => {
   return (
-    <div className="sticky top-0 z-10 border-b border-gray-100 bg-white dark:border-gray-900 dark:bg-gray-800">
+    <div className="sticky top-0 z-10 border-b border-gray-100 bg-white shadow-lg dark:border-gray-900 dark:bg-gray-800">
       <Container>
         <div className="flex h-16 items-center justify-between ">
           <div>
