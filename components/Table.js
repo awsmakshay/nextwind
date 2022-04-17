@@ -1,5 +1,5 @@
+import { ArrowDown, ArrowsDownUp, ArrowUp } from "phosphor-react";
 import { useSortBy, useTable } from "react-table";
-import { SortDownIcon, SortIcon, SortUpIcon } from "./Icons";
 
 const Table = ({ columns, data }) => {
   // Use the state and functions returned from useTable to build your UI
@@ -32,12 +32,12 @@ const Table = ({ columns, data }) => {
                       <span className="text-gray-600 dark:text-gray-100">
                         {column.isSorted ? (
                           column.isSortedDesc ? (
-                            <SortDownIcon className="inline h-4 w-4  " />
+                            <ArrowDown className="inline h-4 w-4  " />
                           ) : (
-                            <SortUpIcon className="inline h-4 w-4  " />
+                            <ArrowUp className="inline h-4 w-4  " />
                           )
                         ) : (
-                          <SortIcon className="inline h-4 w-4   opacity-0 group-hover:opacity-100" />
+                          <ArrowsDownUp className="inline h-4 w-4   opacity-0 group-hover:opacity-100" />
                         )}
                       </span>
                     </div>
