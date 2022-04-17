@@ -1,14 +1,11 @@
 import {
   Briefcase,
-  Calendar,
   ChartBar,
   Compass,
   House,
   Note,
-  ShieldCheck,
   User,
   UserCircleGear,
-  UserCirclePlus,
 } from "phosphor-react";
 
 const navItems = [
@@ -31,11 +28,6 @@ const navItems = [
         icon: <Note weight="duotone" />,
         route: "/directions/docs",
       },
-      {
-        name: "add users",
-        icon: <UserCirclePlus weight="duotone" />,
-        route: "/directions/adduser",
-      },
     ],
   },
 
@@ -51,18 +43,8 @@ const navItems = [
   },
   {
     name: "Customers",
-    route: "/Customers",
+    route: "/customers",
     icon: <Briefcase weight="duotone" />,
-  },
-  {
-    name: "authentication",
-    route: "/authentication",
-    icon: <ShieldCheck weight="duotone" />,
-  },
-  {
-    name: "calendar",
-    route: "/calendar",
-    icon: <Calendar weight="duotone" />,
   },
 ];
 

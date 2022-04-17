@@ -39,7 +39,7 @@ export default function Profile() {
                       Akshay Thakur
                     </div>
                     <div className="text-sm text-gray-600 dark:text-gray-200">
-                      akshay@thakur.com
+                      @awsm_akshay
                     </div>
                   </div>
                 </div>
@@ -48,20 +48,20 @@ export default function Profile() {
                     <UserCircle weight="duotone" className={iconClasses} />
                     My Profile
                   </Button>
-                  <Link href="/admin">
+                  <Button>
+                    {" "}
+                    <GearSix weight="duotone" className={iconClasses} />
+                    Settings
+                  </Button>
+                  <Link href="/auth/login">
                     <a>
                       <Button>
                         {" "}
-                        <GearSix weight="duotone" className={iconClasses} />
-                        Settings
+                        <SignOut weight="duotone" className={iconClasses} />
+                        Sign out
                       </Button>
                     </a>
                   </Link>
-                  <Button>
-                    {" "}
-                    <SignOut weight="duotone" className={iconClasses} />
-                    Sign out
-                  </Button>
                 </div>
               </div>
             </Popover.Panel>

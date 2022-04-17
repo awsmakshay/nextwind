@@ -2,7 +2,7 @@ import { ReactElement } from "react";
 import DummyPage from "../components/DummyPage";
 import Layout from "../components/Layout";
 
-const Admin = () => {
+const Customers = () => {
   return (
     <div>
       <DummyPage />
@@ -10,8 +10,8 @@ const Admin = () => {
   );
 };
 
-export default Admin;
+export default Customers;
 
-Admin.getLayout = (page: ReactElement) => {
+Customers.getLayout = (page: ReactElement) => {
   return <Layout>{page}</Layout>;
 };

@@ -8,8 +8,8 @@ const Header = () => {
       <Container>
         <div className="flex h-16 items-center justify-between ">
           <div>
-            <div className=" font-medium text-gray-700 dark:text-gray-100">
-              Dashboard{" "}
+            <div className=" rounded-lg bg-primary-200 py-1 px-3 text-sm font-medium text-primary-900 dark:bg-primary-900 dark:text-gray-100">
+              Admin Portal{" "}
             </div>
           </div>
           <div className="flex space-x-2">

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   ArrowRight,
   At,
@@ -64,9 +65,14 @@ const Login = () => {
                 </div>
               </div>
 
-              <Button className="mt-8">
-                Sign In <ArrowRight weight="bold" className="ml-2  h-4 w-4 " />
-              </Button>
+              <Link href="/">
+                <a>
+                  <Button className="mt-8">
+                    Sign In{" "}
+                    <ArrowRight weight="bold" className="ml-2  h-4 w-4 " />
+                  </Button>
+                </a>
+              </Link>
             </form>
             <p className="mt-10 text-center text-sm text-gray-500">
               Don&apos;t have an account?{" "}

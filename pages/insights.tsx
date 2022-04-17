@@ -2,7 +2,7 @@ import { ReactElement } from "react";
 import DummyPage from "../components/DummyPage";
 import Layout from "../components/Layout";
 
-const Admin = () => {
+const Insights = () => {
   return (
     <div>
       <DummyPage />
@@ -10,8 +10,8 @@ const Admin = () => {
   );
 };
 
-export default Admin;
+export default Insights;
 
-Admin.getLayout = (page: ReactElement) => {
+Insights.getLayout = (page: ReactElement) => {
   return <Layout>{page}</Layout>;
 };
