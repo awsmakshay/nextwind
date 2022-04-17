@@ -66,11 +66,9 @@ const Home = () => {
         {[...Array(4)].map((_, index) => (
           <div key={index}>
             <Card>
-              <div className="flex  items-center justify-between">
-                <div className="flex-1 pr-4 capitalize">
-                  <div className="flex-col items-center justify-center   ">
-                    <div className="font-medium text-gray-600 "></div>
-                  </div>
+              <div className="flex h-full items-center justify-center">
+                <div className="font-medium text-gray-400 ">
+                  Charts Coming Soon
                 </div>
               </div>
             </Card>
