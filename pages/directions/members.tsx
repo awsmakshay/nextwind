@@ -35,19 +35,18 @@ const Members = () => {
   );
   return (
     <div>
-      <div className="rounded-lg bg-white p-4 shadow-md dark:bg-gray-800">
-        <div className="mb-4 flex flex-col justify-between space-y-3 px-2 text-lg font-medium text-gray-600 dark:text-gray-100 sm:flex-row sm:items-center sm:space-y-0">
-          <div className="">Members</div>
-          <div className="flex space-x-4">
-            <div className="relative  ">
-              <span className="absolute inset-y-0 right-4 inline-flex items-center">
-                <MagnifyingGlass className="mr-2 h-5 w-5 text-gray-500" />
-              </span>
-              <Input placeholder="Search" />
-            </div>
-            <Button>Add</Button>
-          </div>
+      <div className="mb-4 flex flex-col justify-between space-y-3  text-lg font-medium text-gray-600 dark:text-gray-100 sm:flex-row sm:items-center sm:space-y-0">
+        <div className="relative  ">
+          <span className="absolute inset-y-0 right-4 inline-flex items-center">
+            <MagnifyingGlass className="mr-2 h-5 w-5 text-gray-500" />
+          </span>
+          <Input placeholder="Search" className="!bg-white" />
         </div>
+        <div className="flex space-x-4">
+          <Button>Add</Button>
+        </div>
+      </div>
+      <div className="rounded-lg bg-white p-2 shadow-md dark:bg-gray-800">
         <Table columns={columns} data={data} />
       </div>
     </div>
@@ -57,5 +56,5 @@ const Members = () => {
 export default Members;
 
 Members.getLayout = (page: ReactElement) => {
-  return <Layout>{page}</Layout>;
+  return <Layout title="members">{page}</Layout>;
 };

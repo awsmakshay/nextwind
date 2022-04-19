@@ -13,5 +13,5 @@ const Admin = () => {
 export default Admin;
 
 Admin.getLayout = (page: ReactElement) => {
-  return <Layout>{page}</Layout>;
+  return <Layout title="admin">{page}</Layout>;
 };

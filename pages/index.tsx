@@ -80,5 +80,5 @@ const Home = () => {
 export default Home;
 
 Home.getLayout = (page: ReactElement) => {
-  return <Layout>{page}</Layout>;
+  return <Layout title="Dashboard">{page}</Layout>;
 };
