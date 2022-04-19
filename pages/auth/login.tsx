@@ -67,7 +67,7 @@ const Login = () => {
 
               <Link href="/">
                 <a>
-                  <Button className="mt-8 w-full !py-3">
+                  <Button className="mt-8 w-full ">
                     Sign In{" "}
                     <ArrowRight weight="bold" className="ml-2  h-4 w-4 " />
                   </Button>

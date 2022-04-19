@@ -1,4 +1,4 @@
-import { MagnifyingGlass } from "phosphor-react";
+import { MagnifyingGlass, Plus, PlusCircle } from "phosphor-react";
 import { ReactElement, useMemo } from "react";
 import Button from "../../components/Button";
 import Input from "../../components/Input";
@@ -40,10 +40,10 @@ const Members = () => {
           <span className="absolute inset-y-0 right-4 inline-flex items-center">
             <MagnifyingGlass className="mr-2 h-5 w-5 text-gray-500" />
           </span>
-          <Input placeholder="Search" className="!bg-white" />
+          <Input placeholder="Search" />
         </div>
         <div className="flex space-x-4">
-          <Button>Add</Button>
+          <Button>Add Member</Button>
         </div>
       </div>
       <div className="rounded-lg bg-white p-2 shadow-md dark:bg-gray-800">
