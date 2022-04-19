@@ -1,6 +1,8 @@
 ## NextWind
 
-Free and open source admin dashboard using Next JS & Tailwind CSS
+**Free and open source admin dashboard using Next JS & Tailwind CSS**
+
+![nextwind](https://user-images.githubusercontent.com/20199342/163722924-0423a807-5553-4d8f-968a-9b1499337e75.png)
 
 ## Features
 
