@@ -5,6 +5,7 @@ import Input from "../../components/Input";
 import Layout from "../../components/Layout";
 import Table from "../../components/Table";
 import membersData from "../../data/members.json";
+import toast from "react-hot-toast";
 
 const Members = () => {
   const data = useMemo(() => membersData, []);
@@ -43,7 +44,13 @@ const Members = () => {
           <Input placeholder="Search" />
         </div>
         <div className="flex space-x-4">
-          <Button>Add Member</Button>
+          <Button
+            onClick={() => {
+              toast.success("Add Form Coming Soon!");
+            }}
+          >
+            Add Member
+          </Button>
         </div>
       </div>
       <div className="rounded-lg bg-white p-2 shadow-md dark:bg-gray-800">

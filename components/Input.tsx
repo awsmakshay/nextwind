@@ -1,7 +1,7 @@
-import React, { ComponentPropsWithRef } from "react";
+import React from "react";
 type InputProps = {
   className?: string;
-} & ComponentPropsWithRef<"input">;
+} & React.ComponentPropsWithRef<"input">;
 
 const Input = ({ className, ...props }: InputProps) => {
   return (
